@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(assets/Light.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+marquee {
+    color: rgb(0, 180, 108);
+    font-size: 35px;
+    margin-top: 2vh;
+    position: fixed;
+    font-family: arial;
+}
+
+.marquee {
+    color: #fff;
+}
+
+
+.container {
+    width: 340px;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    padding-top: 50vh;
+    margin-left: 65%;
+}
+
+.container .text {
+    position: absolute;
+    color: rgb(0, 180, 108);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: calc(100% + 4px) ;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
